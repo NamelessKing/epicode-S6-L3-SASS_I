@@ -1,0 +1,23 @@
+{
+  "name": "epicode-sass-exercise",
+  "version": "1.0.0",
+  "description": "SASS exercise for Epicode - Hero section with grid",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css",
+    "sass:watch": "sass --watch scss/style.scss css/style.css",
+    "sass:compressed": "sass scss/style.scss css/style.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "frontend",
+    "epicode"
+  ],
+  "author": "Student",
+  "license": "MIT"
+}

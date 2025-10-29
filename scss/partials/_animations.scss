@@ -1,0 +1,23 @@
+// Animation mixin for fade in with slide down effect
+@mixin fade-slide-in(
+  $duration: 0.8s,
+  $delay: 0s,
+  $start-position: -20px,
+  $end-position: 0,
+  $animation-name: fadeSlideIn
+) {
+  opacity: 0;
+  transform: translateY($start-position);
+  animation: #{$animation-name} $duration ease-out $delay forwards;
+
+  @keyframes #{$animation-name} {
+    from {
+      opacity: 0;
+      transform: translateY($start-position);
+    }
+    to {
+      opacity: 1;
+      transform: translateY($end-position);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// Floating mixin for elevated appearance
+@mixin floating(
+  $border-radius: 0.5rem,
+  $shadow: 0 8px 25px $shadow-color,
+  $border: null
+) {
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+
+  @if $border {
+    border: $border;
+  }
+}
+
+// Grid mixin for flexible layouts
+@mixin grid($columns: 4, $gap: 1.5rem) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+
+  > * {
+    flex: 1 1 calc((100% - (#{$gap} * (#{$columns} - 1))) / #{$columns});
+    min-width: 0;
+  }
+}

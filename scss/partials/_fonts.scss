@@ -1,0 +1,43 @@
+@use "sass:map";
+
+// Font family
+$font-family: "Arial", "Helvetica", sans-serif;
+
+// Font sizes
+$font-sizes: (
+  xs: 0.75rem,
+  // 12px
+  sm: 0.875rem,
+  // 14px
+  base: 1rem,
+  // 16px
+  md: 1.125rem,
+  // 18px
+  lg: 1.25rem,
+  // 20px
+  xl: 1.5rem,
+  // 24px
+  xxl: 2.25rem,
+  // 36px
+  xxxl: 2.75rem,
+  // 44px
+  hero: 3.5rem // 56px,
+);
+
+// Font weights
+$font-weights: (
+  light: 300,
+  normal: 400,
+  medium: 500,
+  bold: 700,
+  black: 900,
+);
+
+// Title-big mixin
+@mixin title-big {
+  font-family: $font-family;
+  font-size: map.get($font-sizes, hero);
+  font-weight: map.get($font-weights, black);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}

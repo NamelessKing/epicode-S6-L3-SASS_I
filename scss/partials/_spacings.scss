@@ -1,0 +1,36 @@
+// Spacing values
+$spacings: (
+  sm: 0.5rem,
+  // 8px
+  normal: 1rem,
+  // 16px
+  md: 1.5rem,
+  // 24px
+  lg: 2rem,
+  // 32px
+  xl: 3rem,
+  // 48px
+  xxl: 4rem // 64px,
+);
+
+// Generate padding classes dynamically
+@each $size, $value in $spacings {
+  .padding-block-#{$size} {
+    padding-block: $value;
+  }
+
+  .padding-inline-#{$size} {
+    padding-inline: $value;
+  }
+}
+
+// Generate margin classes dynamically
+@each $size, $value in $spacings {
+  .margin-block-#{$size} {
+    margin-block: $value;
+  }
+
+  .margin-inline-#{$size} {
+    margin-inline: $value;
+  }
+}

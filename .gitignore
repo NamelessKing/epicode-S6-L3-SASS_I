@@ -1,0 +1,60 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# SASS cache files
+.sass-cache/
+*.css.map
+
+# Compiled CSS (optional - uncomment if you don't want to track compiled CSS)
+# css/style.css
+
+# VS Code settings
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Build directories
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak
+
+# Live Sass Compiler generated files
+*.css.map
+.vscode/settings.json
